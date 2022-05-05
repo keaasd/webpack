@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>My portfolio</title>
+</head>
+
+<body class="black_th" id="headerTop">
+  <!-- бургер-кнопка -->
+  <header class="header">
+   <h1>ghbdtn</h1>
+   </header>
+  <!-- мобильное меню   -->
+  <div class="modal__mb">
+    <div class="modal__mb_window">
+      <div class="modal_box">
+        <button type="button" class="burger-btn__close"></button>
+      </div>
+      <div class="burger-link">
+        <a class="modal__link" href="#about">Обо мне</a>
+        <a class="modal__link" href="#portf">Портфолио</a>
+        <a class="modal__link" href="#stages">Этапы работ</a>
+        <a class="modal__link" href="#rates">Цены</a>
+        <a class="modal__link" href="#yourpr">Обратная связь</a>
+      </div>
+      <div class="header__contact-box header__contact-box_moby">
+        <a class="modal__link_social links" href="tel:+79293398016">8&nbsp;929&nbsp;339&#8209;80&#8209;16</a>
+        <a class="modal__link_social modal__link_mail links" href="mailto:kea-asd@yandex.ru">kea&#8209;asd@yandex.ru</a>
+
+      </div>
+      <ul class="special__social-list special__social-list_moby">
+        <li class="special__items"><a href="" class="special__link links vk">Vk</a></li>
+        <li class="special__items"><a href="" class="special__link links in">Instagram</a></li>
+        <li class="special__items"><a href="" class="special__link links lind">Linkedin</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container"></div>
+      
+  </footer>
+
+
+
+
+  <div class="_modal" data-modal="modal-1">
+    <div class="modal-bg">
+      <div class="modal-body">
+        <div class="modal-close"><img src="images/burger_close.svg" alt="" /></div>
+        <div class="modal-content modal-callback">
+          <h2 class="modal-callback__title">Расскажите о&nbsp;своем проекте</h2>
+          <div class="modal-callback__text">
+            Заполните все поля, и я свяжусь с&nbsp;вами в&nbsp;ближайшее время
+          </div>
+          <div class="modal-callback__line"></div>
+        </div>
+        
+
+
+        <form class="modal__form" name="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <label for="tel" class="modal__label modal_font">Телефон или почта</label>
+          <input class="modal__user modal_font" name="tel" type="text" placeholder="Введите телефон" required>
+          <span class="modal__label modal_font">Выберите удобный способ связи</span>
+          <div class="dropdown modal__users  modal_font">
+            <div class="dropdown__box">
+              <button type="button" class="dropdown__button">Telegram</button>
+              <span class="dropdown__button_arrow"></span>
+            </div>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item modal__form_item modal_font" data-value="whatsApp">WhatsApp</li>
+              <li class="dropdown__list-item modal__form_item modal_font" data-value="viber">Viber</li>
+              <li class="dropdown__list-item modal__form_item modal_font" data-value="phone">Звонок на телефон</li>
+              <li class="dropdown__list-item modal__form_item modal_font" data-value="sms">SMS сообщение</li>
+              <li class="dropdown__list-item modal__form_item modal_font" data-value="telegram">Telegram</li>
+            </ul>
+            <input type="text" name="select-category" class="dropdown__input-hidden">
+          </div>
+          <button class="button" type="submit">Отправить</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <a href="#headerTop" class="to-up">&#8679;</a>
+
+</body>
+
+</html>
